@@ -170,12 +170,12 @@ export default class PaymentCardTextField extends Component {
         <TouchableWithoutFeedback
           rejectResponderTermination
           testID={rest.testID}
-          onPress={Keyboard.dismiss}
+          onPress={Keyboard.dismiss()}
           accessible={rest.accessible}
           accessibilityLabel={rest.accessibilityLabel}
           accessibilityTraits={rest.accessibilityTraits}>
           <NativePaymentCardTextField
-            onPress={Keyboard.dismiss}
+            onPress={Keyboard.dismiss()}
             ref={this.setCardTextFieldRef}
             style={[styles.field, fieldStyles]}
             borderColor="transparent"
