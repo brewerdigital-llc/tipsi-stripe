@@ -7,6 +7,7 @@ import {
   TouchableWithoutFeedback,
   ViewPropTypes,
   Platform,
+  Keyboard,
 } from 'react-native'
 import PropTypes from 'prop-types'
 import TextInputState from 'react-native/Libraries/Components/TextInput/TextInputState'
@@ -169,7 +170,7 @@ export default class PaymentCardTextField extends Component {
         <TouchableWithoutFeedback
           rejectResponderTermination
           testID={rest.testID}
-          onPress={this.handlePress}
+          onPress={Keyboard.dismiss}
           accessible={rest.accessible}
           accessibilityLabel={rest.accessibilityLabel}
           accessibilityTraits={rest.accessibilityTraits}>
