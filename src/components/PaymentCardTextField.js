@@ -175,6 +175,7 @@ export default class PaymentCardTextField extends Component {
           accessibilityLabel={rest.accessibilityLabel}
           accessibilityTraits={rest.accessibilityTraits}>
           <NativePaymentCardTextField
+            onPress={Keyboard.dismiss}
             ref={this.setCardTextFieldRef}
             style={[styles.field, fieldStyles]}
             borderColor="transparent"
